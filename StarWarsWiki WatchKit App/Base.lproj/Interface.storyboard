@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MxW-f9-8FQ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+    </dependencies>
+    <scenes>
+        <!--SWWiki-->
+        <scene sceneID="0gh-I0-5Wd">
+            <objects>
+                <controller title="SWWiki" id="MxW-f9-8FQ" customClass="InterfaceController">
+                    <items>
+                        <label alignment="left" text="Characters" id="a1p-xt-K4y">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <table alignment="left" id="ArL-tE-Ftp">
+                            <items>
+                                <tableRow identifier="CharacterRow" id="3pN-I4-lvG" customClass="CharacterTableRow">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="0.0" id="5J3-W9-2Os">
+                                        <items>
+                                            <label alignment="left" text="Name" id="tms-f9-j74">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <label alignment="right" text="Role" textAlignment="right" numberOfLines="0" id="XNt-DR-lRj">
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="name" destination="tms-f9-j74" id="EjO-TO-kqm"/>
+                                        <outlet property="role" destination="XNt-DR-lRj" id="ael-iA-448"/>
+                                        <segue destination="cgz-Nu-d0f" kind="push" identifier="characterDetailSegue" id="R9l-kv-vip"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="characterTable" destination="ArL-tE-Ftp" id="YNn-8h-SxX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="626" y="270"/>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="BNI-ud-KdQ">
+            <objects>
+                <controller id="cgz-Nu-d0f" customClass="DetailInterfaceController">
+                    <items>
+                        <label alignment="left" text="Label" id="a7o-Pn-pBG">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" numberOfLines="0" id="x21-Vi-SH5">
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                        <imageView alignment="left" id="X2k-KF-G8W"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="Ykj-Y4-Wna"/>
+                    </items>
+                    <connections>
+                        <outlet property="bio" destination="Ykj-Y4-Wna" id="qq1-Z7-oy2"/>
+                        <outlet property="image" destination="X2k-KF-G8W" id="XSX-vK-n53"/>
+                        <outlet property="name" destination="a7o-Pn-pBG" id="64e-bN-ok8"/>
+                        <outlet property="role" destination="x21-Vi-SH5" id="wWc-il-0mK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="626" y="529"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+</document>

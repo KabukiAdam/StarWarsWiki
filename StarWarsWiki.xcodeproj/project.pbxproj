@@ -14,6 +14,15 @@
 		667192AC1A6FEE9900412C12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667192AB1A6FEE9900412C12 /* Images.xcassets */; };
 		667192AF1A6FEE9900412C12 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 667192AD1A6FEE9900412C12 /* LaunchScreen.xib */; };
 		667192BB1A6FEE9900412C12 /* StarWarsWikiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 667192BA1A6FEE9900412C12 /* StarWarsWikiTests.m */; };
+		667192CE1A6FEEB300412C12 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 667192CD1A6FEEB300412C12 /* InterfaceController.m */; };
+		667192D01A6FEEB300412C12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667192CF1A6FEEB300412C12 /* Images.xcassets */; };
+		667192D41A6FEEB300412C12 /* StarWarsWiki WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 667192D31A6FEEB300412C12 /* StarWarsWiki WatchKit App.app */; };
+		667192DC1A6FEEB300412C12 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667192DA1A6FEEB300412C12 /* Interface.storyboard */; };
+		667192DE1A6FEEB300412C12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667192DD1A6FEEB300412C12 /* Images.xcassets */; };
+		667192E11A6FEEB300412C12 /* StarWarsWiki WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 667192C81A6FEEB300412C12 /* StarWarsWiki WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		667192EA1A6FEEE700412C12 /* Characters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 667192E91A6FEEE700412C12 /* Characters.plist */; };
+		667192F01A6FF42700412C12 /* CharacterTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 667192EF1A6FF42700412C12 /* CharacterTableRow.m */; };
+		667192F31A6FF91A00412C12 /* DetailInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 667192F21A6FF91A00412C12 /* DetailInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +33,35 @@
 			remoteGlobalIDString = 6671929A1A6FEE9900412C12;
 			remoteInfo = StarWarsWiki;
 		};
+		667192D51A6FEEB300412C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667192931A6FEE9900412C12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 667192D21A6FEEB300412C12;
+			remoteInfo = "StarWarsWiki WatchKit App";
+		};
+		667192DF1A6FEEB300412C12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 667192931A6FEE9900412C12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 667192C71A6FEEB300412C12;
+			remoteInfo = "StarWarsWiki WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		667192E81A6FEEB300412C12 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				667192E11A6FEEB300412C12 /* StarWarsWiki WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6671929B1A6FEE9900412C12 /* StarWarsWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +77,20 @@
 		667192B41A6FEE9900412C12 /* StarWarsWikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsWikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		667192B91A6FEE9900412C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		667192BA1A6FEE9900412C12 /* StarWarsWikiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarWarsWikiTests.m; sourceTree = "<group>"; };
+		667192C81A6FEEB300412C12 /* StarWarsWiki WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "StarWarsWiki WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		667192CB1A6FEEB300412C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667192CC1A6FEEB300412C12 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		667192CD1A6FEEB300412C12 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		667192CF1A6FEEB300412C12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		667192D31A6FEEB300412C12 /* StarWarsWiki WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StarWarsWiki WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		667192D91A6FEEB300412C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667192DB1A6FEEB300412C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		667192DD1A6FEEB300412C12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		667192E91A6FEEE700412C12 /* Characters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Characters.plist; sourceTree = "<group>"; };
+		667192EE1A6FF42700412C12 /* CharacterTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterTableRow.h; sourceTree = "<group>"; };
+		667192EF1A6FF42700412C12 /* CharacterTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTableRow.m; sourceTree = "<group>"; };
+		667192F11A6FF91A00412C12 /* DetailInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailInterfaceController.h; sourceTree = "<group>"; };
+		667192F21A6FF91A00412C12 /* DetailInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +108,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		667192C51A6FEEB300412C12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +123,8 @@
 			children = (
 				6671929D1A6FEE9900412C12 /* StarWarsWiki */,
 				667192B71A6FEE9900412C12 /* StarWarsWikiTests */,
+				667192C91A6FEEB300412C12 /* StarWarsWiki WatchKit Extension */,
+				667192D71A6FEEB300412C12 /* StarWarsWiki WatchKit App */,
 				6671929C1A6FEE9900412C12 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +134,8 @@
 			children = (
 				6671929B1A6FEE9900412C12 /* StarWarsWiki.app */,
 				667192B41A6FEE9900412C12 /* StarWarsWikiTests.xctest */,
+				667192C81A6FEEB300412C12 /* StarWarsWiki WatchKit Extension.appex */,
+				667192D31A6FEEB300412C12 /* StarWarsWiki WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +181,48 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		667192C91A6FEEB300412C12 /* StarWarsWiki WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				667192CC1A6FEEB300412C12 /* InterfaceController.h */,
+				667192CD1A6FEEB300412C12 /* InterfaceController.m */,
+				667192F11A6FF91A00412C12 /* DetailInterfaceController.h */,
+				667192F21A6FF91A00412C12 /* DetailInterfaceController.m */,
+				667192EE1A6FF42700412C12 /* CharacterTableRow.h */,
+				667192EF1A6FF42700412C12 /* CharacterTableRow.m */,
+				667192CF1A6FEEB300412C12 /* Images.xcassets */,
+				667192CA1A6FEEB300412C12 /* Supporting Files */,
+				667192E91A6FEEE700412C12 /* Characters.plist */,
+			);
+			path = "StarWarsWiki WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		667192CA1A6FEEB300412C12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				667192CB1A6FEEB300412C12 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		667192D71A6FEEB300412C12 /* StarWarsWiki WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				667192DA1A6FEEB300412C12 /* Interface.storyboard */,
+				667192DD1A6FEEB300412C12 /* Images.xcassets */,
+				667192D81A6FEEB300412C12 /* Supporting Files */,
+			);
+			path = "StarWarsWiki WatchKit App";
+			sourceTree = "<group>";
+		};
+		667192D81A6FEEB300412C12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				667192D91A6FEEB300412C12 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +233,12 @@
 				667192971A6FEE9900412C12 /* Sources */,
 				667192981A6FEE9900412C12 /* Frameworks */,
 				667192991A6FEE9900412C12 /* Resources */,
+				667192E81A6FEEB300412C12 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				667192E01A6FEEB300412C12 /* PBXTargetDependency */,
 			);
 			name = StarWarsWiki;
 			productName = StarWarsWiki;
@@ -157,6 +263,39 @@
 			productReference = 667192B41A6FEE9900412C12 /* StarWarsWikiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		667192C71A6FEEB300412C12 /* StarWarsWiki WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667192E51A6FEEB300412C12 /* Build configuration list for PBXNativeTarget "StarWarsWiki WatchKit Extension" */;
+			buildPhases = (
+				667192C41A6FEEB300412C12 /* Sources */,
+				667192C51A6FEEB300412C12 /* Frameworks */,
+				667192C61A6FEEB300412C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				667192D61A6FEEB300412C12 /* PBXTargetDependency */,
+			);
+			name = "StarWarsWiki WatchKit Extension";
+			productName = "StarWarsWiki WatchKit Extension";
+			productReference = 667192C81A6FEEB300412C12 /* StarWarsWiki WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		667192D21A6FEEB300412C12 /* StarWarsWiki WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667192E21A6FEEB300412C12 /* Build configuration list for PBXNativeTarget "StarWarsWiki WatchKit App" */;
+			buildPhases = (
+				667192D11A6FEEB300412C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StarWarsWiki WatchKit App";
+			productName = "StarWarsWiki WatchKit App";
+			productReference = 667192D31A6FEEB300412C12 /* StarWarsWiki WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +311,12 @@
 					667192B31A6FEE9900412C12 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 6671929A1A6FEE9900412C12;
+					};
+					667192C71A6FEEB300412C12 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					667192D21A6FEEB300412C12 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -190,6 +335,8 @@
 			targets = (
 				6671929A1A6FEE9900412C12 /* StarWarsWiki */,
 				667192B31A6FEE9900412C12 /* StarWarsWikiTests */,
+				667192C71A6FEEB300412C12 /* StarWarsWiki WatchKit Extension */,
+				667192D21A6FEEB300412C12 /* StarWarsWiki WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +356,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667192C61A6FEEB300412C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667192EA1A6FEEE700412C12 /* Characters.plist in Resources */,
+				667192D01A6FEEB300412C12 /* Images.xcassets in Resources */,
+				667192D41A6FEEB300412C12 /* StarWarsWiki WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667192D11A6FEEB300412C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667192DC1A6FEEB300412C12 /* Interface.storyboard in Resources */,
+				667192DE1A6FEEB300412C12 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +399,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		667192C41A6FEEB300412C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667192CE1A6FEEB300412C12 /* InterfaceController.m in Sources */,
+				667192F31A6FF91A00412C12 /* DetailInterfaceController.m in Sources */,
+				667192F01A6FF42700412C12 /* CharacterTableRow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +416,16 @@
 			isa = PBXTargetDependency;
 			target = 6671929A1A6FEE9900412C12 /* StarWarsWiki */;
 			targetProxy = 667192B51A6FEE9900412C12 /* PBXContainerItemProxy */;
+		};
+		667192D61A6FEEB300412C12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 667192D21A6FEEB300412C12 /* StarWarsWiki WatchKit App */;
+			targetProxy = 667192D51A6FEEB300412C12 /* PBXContainerItemProxy */;
+		};
+		667192E01A6FEEB300412C12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 667192C71A6FEEB300412C12 /* StarWarsWiki WatchKit Extension */;
+			targetProxy = 667192DF1A6FEEB300412C12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -258,6 +444,14 @@
 				667192AE1A6FEE9900412C12 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		667192DA1A6FEEB300412C12 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				667192DB1A6FEEB300412C12 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -393,6 +587,62 @@
 			};
 			name = Release;
 		};
+		667192E31A6FEEB300412C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = StarWarsWiki_WatchKit_Extension;
+				INFOPLIST_FILE = "StarWarsWiki WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		667192E41A6FEEB300412C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = StarWarsWiki_WatchKit_Extension;
+				INFOPLIST_FILE = "StarWarsWiki WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		667192E61A6FEEB300412C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StarWarsWiki WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		667192E71A6FEEB300412C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "StarWarsWiki WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,6 +668,22 @@
 			buildConfigurations = (
 				667192C21A6FEE9900412C12 /* Debug */,
 				667192C31A6FEE9900412C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		667192E21A6FEEB300412C12 /* Build configuration list for PBXNativeTarget "StarWarsWiki WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667192E31A6FEEB300412C12 /* Debug */,
+				667192E41A6FEEB300412C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		667192E51A6FEEB300412C12 /* Build configuration list for PBXNativeTarget "StarWarsWiki WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667192E61A6FEEB300412C12 /* Debug */,
+				667192E71A6FEEB300412C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
